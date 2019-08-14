@@ -1,0 +1,378 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back {
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    z-index: 99999999;
+    padding:5px;
+    
+}
+.back a {
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    color:#fff;
+}
+/* Common CSS */
+
+.inner {
+    width:1200px;
+    margin:auto;
+}
+
+/* Header Section */
+.feature:before {
+    content:'';
+    background-color:rgba(0, 0, 0, 0.37);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    
+    
+}
+.feature {
+    overflow: hidden;
+    position: relative;
+    background:url('../img/sec1_back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 800px;
+}
+.feature:after {
+    content:'';
+    background-color: rgba(255,255,255);
+    width:3000px;
+    height: 300px;
+    position: absolute;
+    bottom:-200px;
+    left:-100px;
+    transform: rotate(5deg);
+    overflow: hidden;
+}
+.feature .inner {
+    position: relative;
+}
+.header {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin:auto;
+    padding:20px 0;
+}
+.logo {
+    width:200px;
+}
+.signin {
+    border:1px solid #fff;
+    width:170px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 25px;
+    position: absolute;
+    top:30px;
+    right:0;
+}
+.signin a {
+    text-decoration: none;
+    color:#fff;
+}
+.inner .header_text {
+    text-align: right;
+    color:#fff;
+}
+.inner .header_text p {
+    font-size:32px;
+}
+.inner .header_text h1 {
+    font-size:56px;
+    margin:15px 0;
+}
+.inner .header_text p:nth-of-type(3) {
+    font-size:48px;
+}
+
+/* Section feature1 */
+
+.feature1 .inner {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.feature1 .inner .feature1_right {
+    width:580px;
+    padding:0 0 0 100px
+}
+.feature1 .inner .feature1_right ul{
+    padding-left:20px
+}
+.feature1_left {
+    margin-left:60px;
+}
+.feature1_right .phone {
+    width:180px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:21px;
+    color:#fff;
+    background-color:lightseagreen;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.38);
+}
+
+
+/* Section : feature2 */
+.feature2:before {
+    content:'';
+    background-color:rgba(0, 0, 75, 0.64);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+.feature2 {
+    position: relative;
+    background:url('../img/feature2_back_phonening.jpg') center;
+    background-size: cover;
+    height: 300px;
+}
+section.feature2 .inner .feature2text{
+    width:1200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.feature2text p{
+    color:#fff;
+    font-size:23px;
+    text-align: center;
+}
+
+
+/* Section Service */
+.service {
+    background-color: #f7f7f7;
+}
+
+.list h1 {
+    text-align: center;
+    font-size:35px;
+}
+
+.service .list {
+    overflow: hidden;
+}
+.list .sv_item {
+    width:30%;    
+}
+.list > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.list > ul > li {
+    background-color:#fff;
+    float:left;
+    box-sizing: border-box;
+    margin: 0 0 60px 59.8px;
+    color:#666;
+}
+.list > ul > li:nth-child(3n+1) {
+    margin-left:0;
+}
+.sv_item {
+    width:355px;
+    height: 355px;
+}
+.sv_item .icon {
+    width:100px;
+    height:100px;
+    margin:40px auto;
+    
+}
+.sv_item .icon img {
+    width:100%;
+}
+.sv_item p {
+    color:#333;
+    font-size: 23px;
+    text-align: center;
+}
+.sv_item ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+/* 서비스 표준 가격 */
+.servicePrice {
+    margin-bottom: 100px;
+}
+.servicePrice h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.servicePrice p {
+    width:800px;
+    font-size: 23px;
+    text-align: center;
+    margin:0 auto 80px;;
+}
+.servicePrice table {
+    margin: auto;
+    width:100%;
+    
+}
+.servicePrice table tr {
+    height:46px;
+}
+.servicePrice table tr:nth-child(2n) {
+    background-color:#fafafc;
+}
+.servicePrice table td:nth-of-type(2){
+    text-align: center;
+}
+
+/* Section priceInfo */
+
+.priceInfo {
+    
+    padding: 90px 0; 
+    background-color:#f7f7f7;
+}
+.priceInfo p {
+    
+    width:640px;
+    margin:auto;
+    font-size: 23px;
+    text-align: center;
+}
+.detail {
+    margin:50px 0 13px;
+    overflow: hidden;
+}    
+
+.itemList{
+    background-color:#fff;
+    float:left;
+    width:47.9%;
+    height: 210px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.itemList:nth-child(1),
+.itemList:nth-child(2){
+    margin-bottom: 40px
+}
+.detail .itemList:nth-child(2n) {
+    margin-left:40px;
+}
+
+.left {
+    border-right:1px solid #d4d4d4;
+    width:130px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top:40px;
+    font-size:20px;
+}
+.right h4 {
+    text-align: center;
+}
+.right li {
+    line-height: 1.8;
+}
+
+.detail .itemList:nth-child(1) h4 {
+    color:#795f25;
+}
+.detail .itemList:nth-child(1) .left {
+    color:#795f25;
+}
+.detail .itemList:nth-child(2) h4 {
+    color:#29528c;
+}
+.detail .itemList:nth-child(2) .left {
+    color:#29528c;
+}
+.detail .itemList:nth-child(3) h4 {
+    color:#8e4593;
+}
+.detail .itemList:nth-child(3) .left {
+    color:#8e4593;
+}
+.detail .itemList:nth-child(4) h4 {
+    color:#227b3e;
+}
+.detail .itemList:nth-child(4) .left {
+    color:#227b3e;
+}
+
+.priceInfo .warn_msg {
+    font-size:11px;
+    width:1200px;
+    margin:auto;
+}
+
+footer {
+    background-color:#333333;
+    overflow: hidden;
+}
+
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer .last_comment:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+footer ul li {
+    float: left;
+    margin-left:14px;
+    width:120px;
+    color: #fff;
+    text-align: center;
+}
+footer ul li p {
+    margin-top:10px;;
+}
+footer ul li img {
+    width:100%;
+}
+footer ul li:first{
+    margin-left:0; 
+}
+footer ul li:last-child{
+    width:150px;
+}
+.last_comment {
+    float:left;
+    margin-left:180px;
+    color:#fff;
+}
